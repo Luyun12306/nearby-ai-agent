@@ -41,7 +41,8 @@ def test_offline_full_flow(monkeypatch, tmp_path):
     assert "street address" in a.send("Maria Lopez 512-555-0142")
     assert "When can someone" in a.send("1402 Bluebonnet Ln")
     assert "own or rent" in a.send("home all day today")
-    r = a.send("I own it")
+    assert "Anything else the technician should know" in a.send("I own it, it's a house")
+    r = a.send("Sump pump stopped working and I'll file with State Farm")
     assert "OK to share" in r and "1402 Bluebonnet Ln, Austin, Texas 78704" in r
     r = a.send("yes")
     assert r.startswith("Done!") and a.lead
@@ -51,6 +52,10 @@ def test_offline_full_flow(monkeypatch, tmp_path):
     assert lead["customer"]["phone"] == "(512) 555-0142"
     assert lead["recommended_provider"]["name"] == "Total Restoration of Texas"
     assert lead["backup_providers"][0]["name"] == "Austin Flood & Leak Restoration"
+    assert lead["service_location"]["property_type"] == "single_family"
+    assert lead["service_location"]["ownership"] == "owner"
+    assert len(lead["job"]["details"]) >= 3
+    assert lead["quality"]["score"] >= 90
     assert a.lead_path.exists()
 
 
@@ -69,3 +74,26 @@ def test_offline_asks_category_when_unclear(monkeypatch, tmp_path):
     r = a.send("something is wrong in my house")
     assert "Which of these best fits" in r
     assert "ZIP" in a.send("2")
+
+
+def test_offline_change_of_mind_after_decline(monkeypatch, tmp_path):
+    monkeypatch.setattr(offline_mod, "search_providers", fake_search)
+    a = OfflineAgent(leads_dir=tmp_path)
+    a.send("Water started coming into my basement last night, 78704")
+    a.send("about 2 inches, carpet soaked")
+    assert "reach them directly" in a.send("no thanks")
+    r = a.send("actually yes, please send it")
+    assert "name" in r and "reach them directly" not in r
+    assert a.chosen == "osm:node/1"
+
+
+def test_offline_skip_extra_details(monkeypatch, tmp_path):
+    monkeypatch.setattr(offline_mod, "search_providers", fake_search)
+    a = OfflineAgent(leads_dir=tmp_path)
+    for msg in ["toilet is leaking, 78704", "behind the toilet, since yesterday", "within 24 hours", "yes",
+                "Sam Lee 512-555-0101", "77 Oak St Apt 4", "evenings", "I rent"]:
+        a.send(msg)
+    assert a.property_type == "apartment" and a.ownership == "renter"
+    before = list(a.details)
+    assert "OK to share" in a.send("no")
+    assert a.details == before

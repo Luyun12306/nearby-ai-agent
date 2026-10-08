@@ -18,7 +18,8 @@ from .providers import ProviderSearchError, search_providers
 # Keyword -> category scoring. Longer, more specific phrases score higher.
 KEYWORDS = {
     "water_damage_restoration": ["flood", "flooding", "water coming in", "water in my basement", "water in the basement",
-                                 "standing water", "water damage", "soaked", "storm", "basement is wet"],
+                                 "standing water", "water damage", "soaked", "storm", "basement is wet",
+                                 "into my basement", "in my basement", "into the basement", "basement", "coming into"],
     "basement_waterproofing": ["seepage", "sump pump", "waterproof", "foundation crack", "damp basement"],
     "plumbing": ["leak", "leaking", "pipe", "clog", "clogged", "drain", "toilet", "faucet", "water heater",
                  "sewer", "sink", "no hot water", "shower"],
@@ -104,6 +105,16 @@ def detect_urgency(text: str) -> Optional[str]:
     return None
 
 
+def detect_property_type(text: str) -> str:
+    t = text.lower()
+    for word, kind in [("townhouse", "townhouse"), ("town house", "townhouse"), ("condo", "condo"),
+                       ("apartment", "apartment"), ("apt", "apartment"), ("mobile", "mobile_home"),
+                       ("house", "single_family"), ("home", "single_family")]:
+        if word in t:
+            return kind
+    return ""
+
+
 def extract_location(text: str) -> Optional[str]:
     m = ZIP_RE.search(text)
     if m:
@@ -173,6 +184,8 @@ class OfflineAgent:
         self.availability = ""
         self.ownership = ""
         self.declined = False
+        self.property_type = ""
+        self.asked_extra = False
         self.awaiting: Optional[str] = None
 
     # -- public ----------------------------------------------------------------
@@ -197,6 +210,10 @@ class OfflineAgent:
                 self.category = ranked[0]
             self.urgency = detect_urgency(text)
             self.location = extract_location(text)
+        elif self.declined and self.providers and YES_RE.search(text) and not NO_RE.search(text):
+            # "If you change your mind, just say so" - pick up where we left off.
+            self.declined = False
+            self.chosen = self.chosen or self.providers[0]["provider_id"]
         else:
             prefix = self._absorb(text)
             if self.lead:
@@ -246,6 +263,8 @@ class OfflineAgent:
             self.customer["name"] = extract_name(text) or self.customer["name"]
         elif a == "address":
             self.address = parse_address(text, self.resolved)
+            if re.search(r"\b(apt|apartment|unit|#)\s*\w", text, re.I):
+                self.property_type = self.property_type or "apartment"
         elif a == "availability":
             self.availability = text
             t = text.lower()
@@ -256,6 +275,11 @@ class OfflineAgent:
         elif a == "ownership":
             t = text.lower()
             self.ownership = "renter" if "rent" in t else "owner" if "own" in t else "unknown"
+            self.property_type = self.property_type or detect_property_type(t)
+        elif a == "extra":
+            self.asked_extra = True
+            if not re.fullmatch(r"\W*(no|nope|nothing|none|n/?a|that's it|that's all)\W*", text.strip(), re.I):
+                self.details.append(text)
         elif a == "consent":
             if YES_RE.search(text) and not NO_RE.search(text):
                 return self._create_lead(consent_statement=text)
@@ -298,7 +322,7 @@ class OfflineAgent:
         if not (self.customer["name"] and (self.customer["phone"] or self.customer["email"])):
             self.awaiting = "contact"
             missing = "your name and best phone number" if not self.customer["name"] else "a phone number or email"
-            return f"Great. What's {missing}?"
+            return f"Great. What's {missing}? (An email is helpful too, if you'd like.)"
 
         if not self.address.get("street_address"):
             self.awaiting = "address"
@@ -310,7 +334,12 @@ class OfflineAgent:
 
         if not self.ownership:
             self.awaiting = "ownership"
-            return "Do you own or rent the home?"
+            return "Do you own or rent, and is it a house, townhouse, condo or apartment?"
+
+        if not self.asked_extra:
+            self.awaiting = "extra"
+            return ("Anything else the technician should know, like what you've already tried, how to get in, "
+                    "or an insurance claim? (or just say 'no')")
 
         self.awaiting = "consent"
         p = self.known_providers[self.chosen]
@@ -364,7 +393,8 @@ class OfflineAgent:
         data = {
             "customer": {**self.customer, "preferred_contact_method": "phone" if self.customer["phone"] else "email",
                          "consent_to_share": True, "consent_statement": consent_statement},
-            "service_location": {**self.address, "ownership": self.ownership, "property_type": ""},
+            "service_location": {**self.address, "ownership": self.ownership,
+                                 "property_type": self.property_type},
             "job": {
                 "category": self.category,
                 "urgency": self.urgency,

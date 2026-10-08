@@ -161,7 +161,8 @@ def format_lead(lead: dict) -> str:
         f"LEAD {lead['lead_id']}  [{job['urgency'].upper()}]  {job['category_label']}  quality={lead['quality']['score']}/100",
         f"  Customer : {c['name']} | {c['phone'] or '-'} | {c['email'] or '-'} (prefers {c['preferred_contact_method']})",
         f"  Location : {loc['street_address']}, {loc['city']}, {loc['state']} {loc['zip']}"
-        + (f" ({loc['property_type']}, {loc['ownership']})" if loc['property_type'] or loc['ownership'] else ""),
+        + (f" ({', '.join(x for x in (loc['property_type'], loc['ownership']) if x)})"
+           if loc['property_type'] or loc['ownership'] else ""),
         f"  Problem  : {job['problem_summary']}",
     ]
     lines += [f"    - {d}" for d in job["details"]]

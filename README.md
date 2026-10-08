@@ -301,7 +301,7 @@ Implemented and verified:
 - Live Claude conversations end to end (CLI), including a manual run that produced a 100/100 lead in 3 turns
 - Provider search tested live with OpenStreetMap (Sunnyvale, Austin, Chicago, Seattle, Denver, Columbus, New York)
 - Offline rule-based demo mode (`--offline`, automatic when no key is set)
-- Lead validation (including a recorded consent quote), scoring and persistence; 19 unit tests (`tests/`)
+- Lead validation (including a recorded consent quote), scoring and persistence; 21 unit tests (`tests/`)
 
 Implemented but not tested: the Google Places backend (no key was available).
 

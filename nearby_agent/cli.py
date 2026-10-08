@@ -62,7 +62,8 @@ def main():
         if user == "/lead":
             print(json.dumps(agent.lead, indent=2) if agent.lead else "(no lead yet)")
             continue
-        print("(thinking...)", flush=True)
+        if not offline:
+            print("(thinking...)", flush=True)
         try:
             reply = agent.send(user)
         except anthropic.AuthenticationError:
