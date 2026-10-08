@@ -1,0 +1,122 @@
+{
+  "lead_id": "LEAD-20261008-A88F3D",
+  "created_at": "2026-10-08T03:07:31+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Maria Lopez",
+    "phone": "(512) 555-0142",
+    "email": "maria.lopez@example.com",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "1402 Bluebonnet Ln",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78704",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "water_damage_restoration",
+    "category_label": "Water Damage Restoration",
+    "urgency": "emergency",
+    "problem_summary": "Basement flooding after last night's storm. About 2 inches of standing water across the entire basement, and water is still slowly seeping in along the north wall. Sump pump does not appear to be running.",
+    "details": [
+      "Location: basement, entire floor",
+      "Approx. 2 inches of standing water",
+      "Active slow seepage along north wall",
+      "Started last night after storm",
+      "Sump pump appears not to be running",
+      "Homeowner is home all day; can come anytime",
+      "Insurance: State Farm, likely filing a claim"
+    ],
+    "availability": "Home all day, anytime today",
+    "safety_notes": "Standing water in basement; homeowner advised not to handle sump pump while standing in water. Electrical status in basement not confirmed.",
+    "insurance_claim": "yes - likely filing with State Farm"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/14181398653",
+    "name": "Resolute Water Damage",
+    "category": "water_damage_restoration",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/14181398653",
+    "phone": "+1 855-213-9584",
+    "website": "https://resolutewaterdamageaustin.com",
+    "email": "support@resolutewaterdamageaustin.com",
+    "address": "112 1/2 Jacob Fontaine Lane, Austin, TX 78752",
+    "distance_km": 10.1,
+    "hours": "24/7",
+    "match_reasons": [
+      "business name matches the service",
+      "advertises 24/7 or emergency service",
+      "specialization match: water"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/14157556138",
+      "name": "Austin Flood & Leak Restoration",
+      "category": "water_damage_restoration",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/14157556138",
+      "phone": "+1 512-271-5099",
+      "website": "https://austinfloodleakrestoration.com",
+      "email": "support@austinfloodleakrestoration.com",
+      "address": "505 E Huntland Dr, Austin, TX 78752",
+      "distance_km": 10.9,
+      "hours": "24/7",
+      "match_reasons": [
+        "business name matches the service",
+        "advertises 24/7 or emergency service"
+      ]
+    },
+    {
+      "provider_id": "osm:node/10576703198",
+      "name": "All Nation Restoration",
+      "category": "water_damage_restoration",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/10576703198",
+      "phone": "+1 512-934-8180",
+      "website": "https://www.allnationrestoration.com/",
+      "email": "info@allnationrestoration.com",
+      "address": "9301 U.S. 290 W Ste. 104, Austin, TX 78736",
+      "distance_km": 16.2,
+      "hours": "24/7",
+      "match_reasons": [
+        "business name matches the service",
+        "advertises 24/7 or emergency service"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 100,
+    "missing": []
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Water started coming into my basement last night after the storm. I don't know who to call."
+    },
+    {
+      "role": "assistant",
+      "text": "I'm sorry, that's a stressful way to wake up. For active water coming in after a storm, the first call should go to a water damage restoration company. They pump out the water and dry everything so mold doesn't start.\n\nSafety first: if the water is near outlets, cords, appliances or the electrical panel, stay out of the water. Only turn off power to the basement at the breaker if you can get to the panel while standing somewhere dry. If you can't do that safely, call your electric utility.\n\nTo find someone nearby:\n1. What's your ZIP code?\n2. Roughly how much water is down there (damp floor, an inch or two, or deeper), and is it still coming in?"
+    },
+    {
+      "role": "user",
+      "text": "I'm in 78704. There's about 2 inches across the whole basement, and it's still seeping in slowly along the north wall. The sump pump doesn't seem to be running at all."
+    },
+    {
+      "role": "assistant",
+      "text": "Here are the best matches near 78704 for getting the water out today:\n\n1. Resolute Water Damage, +1 855-213-9584. Open 24/7 and specializes in water damage, about 10 km away. This is my top pick.\n2. Austin Flood & Leak Restoration, +1 512-271-5099. Also open 24/7, about 11 km away.\n3. Total Restoration of Texas, +1-512-698-8444. The closest at about 3 km, but its listing doesn't say it offers 24/7 service.\n\nAbout the sump pump: please don't touch it or unplug it while you're standing in water. A restoration crew can pump out the basement and check whether the sump pump needs a repair later. Also, take photos of the water and anything damaged before cleanup starts, in case you file an insurance claim.\n\nI can send your request to Resolute Water Damage so they call you back right away. If you'd like that, please send me:\n- Your full name and best phone number (and email, if you want)\n- The street address where the work is needed\n- When someone can come (now, or a time window)\n- Whether you own or rent, and whether it's a house, townhouse, etc.\n- Whether you plan to file an insurance claim"
+    },
+    {
+      "role": "user",
+      "text": "Yes, please send it to Resolute. I'm Maria Lopez, 512-555-0142, maria.lopez@example.com, at 1402 Bluebonnet Ln, Austin 78704. I own the house (single family) and I'm home all day so they can come anytime. I have State Farm and will probably file a claim."
+    },
+    {
+      "role": "assistant",
+      "text": "Your request is in, Maria. Lead ID: LEAD-20261008-A88F3D\n\nIt's going to Resolute Water Damage. Austin Flood & Leak Restoration and All Nation Restoration are listed as backups. The status shows \"ready to dispatch,\" so it may not have reached them yet. Since water is still coming in, I'd also call them yourself now: Resolute Water Damage, +1 855-213-9584 (open 24/7). Give them your lead ID so you don't have to explain everything twice.\n\nWhat happens next:\n- They should call you at 512-555-0142 to confirm a time, then come out to pump out the water and set up drying equipment.\n- Call State Farm today to open your claim, and keep your photos and any receipts.\n- Stay out of the standing water unless you know the basement power is off.\n\nIf you don't hear from them within an hour or so, call Austin Flood & Leak Restoration at +1 512-271-5099 (also open 24/7)."
+    }
+  ]
+}

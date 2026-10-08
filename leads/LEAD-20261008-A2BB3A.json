@@ -1,0 +1,107 @@
+{
+  "lead_id": "LEAD-20261008-A2BB3A",
+  "created_at": "2026-10-08T03:21:03+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Linda Park",
+    "phone": "(408) 555-0110",
+    "email": "lpark@example.com",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true,
+    "consent_statement": "Yes, you can share all that with them. A call is best, but text is fine too if they can't reach me."
+  },
+  "service_location": {
+    "street_address": "977 Pome Ave",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "plumbing",
+    "category_label": "Plumbing",
+    "urgency": "within_week",
+    "problem_summary": "12-year-old gas tank water heater has only produced lukewarm water since Sunday. There is also a small puddle under the unit; no gas smell reported.",
+    "details": [
+      "Gas water heater, about 12 years old",
+      "Water only lukewarm since Sunday",
+      "Small puddle under the heater, source not yet identified",
+      "No gas smell",
+      "Customer wants the trip/diagnostic fee and a written quote before any work",
+      "Prefers a phone call; text OK if unreachable",
+      "Available sometime this week, mornings preferred"
+    ],
+    "availability": "Sometime this week, mornings preferred",
+    "safety_notes": "No gas smell reported. Small water puddle under unit.",
+    "insurance_claim": ""
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/6300323028",
+    "name": "Palo Alto Plumbing Heating & Air",
+    "category": "plumbing",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/6300323028",
+    "phone": "+1-650-856-3400",
+    "website": "https://www.paloaltoplumbing.net",
+    "distance_km": 8.9,
+    "match_reasons": [
+      "tagged as plumbing on OpenStreetMap",
+      "business name matches the service"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/9667935569",
+      "name": "South Bay Builders",
+      "category": "plumbing",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/9667935569",
+      "phone": "+1-408-892-2562",
+      "website": "https://southbaybuilderssanjose.com",
+      "address": "1265 Lakeside Drive, Sunnyvale, CA 94085",
+      "distance_km": 5.3,
+      "match_reasons": [
+        "tagged as plumbing on OpenStreetMap"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 100,
+    "missing": []
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "how much does it cost to fix a water heater"
+    },
+    {
+      "role": "assistant",
+      "text": "I can't give you a price, even a rough one. Water heater repair costs depend a lot on what the technician finds, and the provider will give you a quote. When I send your request, I can add a note saying you want the diagnostic or trip fee and a written quote before any work starts.\n\nWhat's involved depends on the problem. Some common ones:\n- No hot water or it runs out fast: often a heating element or thermostat on electric units, or a pilot, thermocouple or gas valve problem on gas units\n- Leaking from the tank itself: usually means the tank needs replacing\n- Leaking from fittings or the pressure relief valve: often a smaller fix\n- Popping or rumbling sounds: usually sediment buildup, and flushing the tank may help\n\nIf you see water pooling near outlets or electrical equipment, or you smell gas, tell me right away. There are safety steps to take first.\n\nTo find the right local plumber for you:\n1. What's going on with it, and is it gas or electric?\n2. What's your ZIP code?"
+    },
+    {
+      "role": "user",
+      "text": "It's gas, about 12 years old, and the water's only been lukewarm since Sunday. There's also a small puddle under it, no gas smell though. ZIP is 94087."
+    },
+    {
+      "role": "assistant",
+      "text": "A 12-year-old gas heater with lukewarm water and a small puddle is worth getting looked at soon. Twelve years is near the end of a typical tank's life, so a leak from the tank itself would usually mean replacing it. A leak from a fitting or the relief valve can often be repaired. The lukewarm water could be sediment buildup, a burner or thermocouple problem, or a thermostat or gas valve problem. The technician will figure out which.\n\nUntil then:\n- Put down towels or a shallow pan and keep anything valuable away from the puddle.\n- If the leak gets worse, close the cold water shutoff valve on the pipe going into the top of the heater.\n- If you ever smell gas, leave the house and call 911 or your gas utility from outside.\n\nI found two plumbers near 94087:\n1. Palo Alto Plumbing Heating & Air, 650-856-3400, about 8.9 km away. The name suggests plumbing and heating is their main business, which fits a gas water heater job.\n2. South Bay Builders, 408-892-2562, about 5.3 km away in Sunnyvale. They're closer, but they may be more of a general builder, so check that they handle water heaters.\n\nMy top pick is Palo Alto Plumbing Heating & Air. Want me to send them your request so they call you back? If so, please send me:\n- Your full name and best phone number (plus email if you'd like)\n- The service address, with street, city and ZIP\n- When someone can come, whether you own or rent, and the type of home (house, condo, etc.)\n\nI can also note that you'd like the trip or diagnostic fee and a written quote before any work starts."
+    },
+    {
+      "role": "user",
+      "text": "Okay, as long as they'll give me a quote first, go ahead with Palo Alto Plumbing. I'm Linda Park, 408-555-0110, lpark@example.com, at 977 Pome Ave, Sunnyvale 94087. I own the house (single family), and sometime this week works, mornings are best."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, Linda. Before I send it, I need a clear yes on one thing:\n\nCan I share your name, phone (408-555-0110), email (lpark@example.com), address (977 Pome Ave, Sunnyvale, CA 94087) and these job details with Palo Alto Plumbing Heating & Air so they can contact you?\n\nThe request will cover your 12-year-old gas water heater with lukewarm water since Sunday, the small puddle and no gas smell. It will say you're the owner of a single-family home, a visit sometime this week works, mornings are best, and you want the trip or diagnostic fee and a written quote before any work.\n\nAlso, would you rather they call, text or email you?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, you can share all that with them. A call is best, but text is fine too if they can't reach me."
+    },
+    {
+      "role": "assistant",
+      "text": "Your request has been created and is queued for Palo Alto Plumbing Heating & Air.\n\n- Lead ID: LEAD-20261008-A2BB3A\n- Provider: Palo Alto Plumbing Heating & Air, 650-856-3400\n\nI can't promise how they'll handle quoting. The request does say you want the trip or diagnostic fee and a written quote before any work starts, and that you'd like a call first, with text as a backup. It's worth confirming the quote when they call.\n\nI can't see when they'll pick up the request. If you want to lock in a morning this week, or the puddle gets bigger, call them directly. If the leak gets worse in the meantime, close the cold water valve on the pipe going into the top of the heater."
+    }
+  ]
+}

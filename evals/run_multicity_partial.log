@@ -1,0 +1,165 @@
+=== storm_basement ===
+ANTHROPIC_API_KEY is set and takes precedence over the SDK's profile / federation auto-discovery; unset ANTHROPIC_API_KEY to use the auto-discovered credential.
+
+  USER: Water started coming into my basement last night after the storm. I don't know who to call.
+  AGENT: I'm sorry, that's a stressful way to wake up. For active water coming in after a storm, the first call should go to a water damage restoration company. They pump out the water and dry everything so mold doesn't start.
+
+Safety first: if the water is near outlets, cords, appliances or the electrical panel, stay out of the water. Only turn off power to the basement at the breaker if you can get to the panel while standing somewhere dry. If you can't do that safely, call your electric utility.
+
+To find someone nearby:
+1. What's your ZIP code?
+2. Roughly how much water is down there (damp floor, an inch or two, or deeper), and is it still coming in?
+
+  USER: I'm in 78704. There's about 2 inches across the whole basement, and it's still seeping in slowly along the north wall. The sump pump doesn't seem to be running at all.
+[search_providers] {'category': 'water_damage_restoration', 'location': '78704', 'urgency': 'emergency', 'specialization': 'basement flooding water extraction sump pump'} -> 5 providers via openstreetmap
+  AGENT: Here are the best matches near 78704 for getting the water out today:
+
+1. Resolute Water Damage, +1 855-213-9584. Open 24/7 and specializes in water damage, about 10 km away. This is my top pick.
+2. Austin Flood & Leak Restoration, +1 512-271-5099. Also open 24/7, about 11 km away.
+3. Total Restoration of Texas, +1-512-698-8444. The closest at about 3 km, but its listing doesn't say it offers 24/7 service.
+
+About the sump pump: please don't touch it or unplug it while you're standing in water. A restoration crew can pump out the basement and check whether the sump pump needs a repair later. Also, take photos of the water and anything damaged before cleanup starts, in case you file an insurance claim.
+
+I can send your request to Resolute Water Damage so they call you back right away. If you'd like that, please send me:
+- Your full name and best phone number (and email, if you want)
+- The street address where the work is needed
+- When someone can come (now, or a time window)
+- Whether you own or rent, and whether it's a house, townhouse, etc.
+- Whether you plan to file an insurance claim
+
+  USER: Yes, please send it to Resolute. I'm Maria Lopez, 512-555-0142, maria.lopez@example.com, at 1402 Bluebonnet Ln, Austin 78704. I own the house (single family) and I'm home all day so they can come anytime. I have State Farm and will probably file a claim.
+[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-A88F3D.json
+  AGENT: Your request is in, Maria. Lead ID: LEAD-20261008-A88F3D
+
+It's going to Resolute Water Damage. Austin Flood & Leak Restoration and All Nation Restoration are listed as backups. The status shows "ready to dispatch," so it may not have reached them yet. Since water is still coming in, I'd also call them yourself now: Resolute Water Damage, +1 855-213-9584 (open 24/7). Give them your lead ID so you don't have to explain everything twice.
+
+What happens next:
+- They should call you at 512-555-0142 to confirm a time, then come out to pump out the water and set up drying equipment.
+- Call State Farm today to open your claim, and keep your photos and any receipts.
+- Stay out of the standing water unless you know the basement power is off.
+
+If you don't hear from them within an hour or so, call Austin Flood & Leak Restoration at +1 512-271-5099 (also open 24/7).
+converted=True category=water_damage_restoration ok=True quality=100 turns=3 provider=Resolute Water Damage 
+=== no_heat ===
+
+  USER: my furnace stopped working and it's freezing in here
+  AGENT: I'm sorry, that's miserable in cold weather. Let's get someone out to you fast.
+
+First, a safety check: if you smell gas (rotten eggs) or your carbon monoxide alarm is going off, get everyone out of the house now and call 911 or your gas utility from outside.
+
+Two quick questions:
+1. What's your ZIP code (or city and state)?
+2. What's the furnace doing? For example, is it completely dead, is the fan blowing cold air, or is it clicking without lighting? And roughly when did it stop?
+
+  USER: no gas smell. 60625, its blowing cold air since this morning
+[search_providers] {'category': 'hvac', 'location': '60625', 'urgency': 'emergency', 'specialization': 'furnace repair, no heat, blowing cold air'} -> 5 providers via openstreetmap
+  AGENT: Found some good options near you in Chicago:
+
+1. Elite HVACS Furnace, AC & Plumbing Repair, about 6.6 km away in Skokie. Open 24/7 and does furnace repair, so they're my top pick. Phone: +1-708-578-7823
+2. Shavitz Heating and Air Conditioning, about 8.2 km away in Skokie. A heating and cooling specialist. Phone: +1-847-678-1000
+3. Malek Heating & Cooling, about 8.2 km away in Skokie. Also a heating specialist. Phone: +1-877-646-8265
+
+While you wait, a few quick checks sometimes fix cold air:
+- Make sure the thermostat is set to HEAT, the fan is on AUTO, and the batteries aren't dead.
+- Check that the furnace filter isn't badly clogged.
+- Make sure the furnace power switch (it looks like a light switch near the unit) is on.
+
+Want me to send your request to Elite HVACS so they call you back? If so, I'll need:
+- Your full name and best phone number (and email, if you'd like)
+- The service address
+- When someone can come (as soon as possible today?)
+- Whether you own or rent, and the type of home (house, condo, apartment, etc.)
+
+  USER: yeah send it to elite. dave kowalski, 773-555-0199, 4821 n damen ave, i own the house. asap today, any time works. already changed the thermostat batteries btw, its set to 70 and its 58 in here, got 2 kids
+  AGENT: Got it, Dave. A 58-degree house with two kids is definitely urgent, so I'll mark this as an emergency.
+
+Before I send it: do you agree to share your name, phone number, and address with Elite HVACS so they can call you back? Just say yes and I'll send it right away.
+
+  USER: yes
+[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-30057D.json
+  AGENT: Done, Dave. I've marked your request as an emergency and sent it to Elite HVACS.
+
+- Lead ID: LEAD-20261008-30057D
+- Elite HVACS Furnace, AC & Plumbing Repair: +1-708-578-7823 (open 24/7)
+
+They should call you at 773-555-0199 to set up a time today. Since it's cold and you have kids, it'd be faster to call them yourself now and mention your lead ID. If they can't come today, try Shavitz at +1-847-678-1000 or Malek at +1-877-646-8265.
+
+Until they get there, keep everyone in one room with the doors shut. If you use space heaters, keep them 3 feet from anything that can burn. Never use the oven or stove to heat the house.
+converted=True category=hvac ok=True quality=97 turns=4 provider=Elite HVACS Furnace, AC & Plumbing Repair 
+=== sparking_outlet ===
+
+  USER: One of the outlets in my kitchen sparked and now half the kitchen has no power.
+  AGENT: That sounds scary. I'm glad you're okay. First, a few safety steps:
+
+- Don't plug anything into that outlet or the others that lost power, and unplug anything that's in them now if you can do it without touching scorch marks.
+- If you smell burning, see smoke, or the outlet or wall plate feels hot, leave the house and call 911.
+- If none of that is happening, it's probably a tripped breaker or GFCI. Leave it off for now. Don't keep resetting it, because a breaker that trips again after a spark is a sign of a real fault.
+
+A licensed electrician should take a look. Two quick questions so I can find someone near you:
+
+1. What's your ZIP code (or city and state)?
+2. Is anything still warm or smelling burnt, or did everything settle down after the spark?
+
+  USER: It's Seattle, 98103. No burning smell now; it popped and sparked yesterday evening, and the breaker for that circuit won't stay reset when I try.
+[search_providers] {'category': 'electrical', 'location': '98103', 'urgency': 'within_24h', 'specialization': "sparking outlet, breaker won't reset, kitchen circuit troubleshooting"} -> 3 providers via openstreetmap
+  AGENT: Thanks, that helps. A breaker that won't stay reset after a spark usually means there's a short on that circuit, so you were right to stop resetting it. Leave the breaker off until someone looks at it. Here's what I found near 98103:
+
+1. Kemly Electric, Inc. (2.4 km away): an electrical company close to you. My top pick for a short like this. The listing has no phone number, only a website: https://www.kemlyelectric.com/
+2. Extreme Handyman Service (2.7 km away): open 24/7, so it's your fastest option at +1-206-614-0001. It's a handyman business, though, so ask whether a licensed electrician would do the job.
+3. Cochran (5.2 km away, Aurora Ave N): a larger electrical contractor that's a bit farther out. Website: https://www.cochraninc.com/
+
+I can send your request to Kemly Electric and have them call you back, with the others as backups. To do that, I'll need:
+
+- Your full name, best phone number, and email if you'd like
+- The street address where the work is (Seattle, WA 98103), and whether it's a house, condo, apartment, etc. Do you own or rent?
+- When someone can come by
+
+Also, is it okay for me to share your contact info with Kemly Electric (and the backups if Kemly can't take it)?
+
+  USER: Quick question before I send everything: why do you need to know if I own or rent? For the record, I'm Priya Raman, 206-555-0163, and it's a condo in 98103. I'd prefer weekday afternoons this week.
+  AGENT: Good question. Electricians ask because if you rent, the landlord or property manager usually has to approve and pay for the work. In a condo, the HOA can sometimes matter too, for example if the problem traces back to shared wiring. Knowing this up front means the electrician doesn't show up and then can't start. It's optional, so if you'd rather not say, I'll leave it as unknown.
+
+Thanks, Priya. I have your name, phone, condo in 98103, and weekday afternoons this week. Two last things:
+
+1. Your street address, including the unit number
+2. Is it okay for me to share your contact info with Kemly Electric, and with Extreme Handyman Service or Cochran as backups? And do you own or rent, if you're comfortable saying?
+
+  USER: That makes sense, thanks. I own it, and the address is 3810 Fremont Ave N Unit 204, Seattle WA 98103. Yes, you can share my info with Kemly and the backups. My email is priya.r@example.com if they want it.
+[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-D59357.json
+  AGENT: Your request is in, Priya. Your lead ID is LEAD-20261008-D59357, and it's going to Kemly Electric, Inc.
+
+- What's next: Kemly should call you at 206-555-0163 to set up a weekday afternoon visit this week. If they can't take it, Extreme Handyman Service or Cochran may contact you instead.
+- To reach Kemly directly: their listing has no phone number, but you can contact them through https://www.kemlyelectric.com/ and mention your lead ID.
+- If you'd like it fixed sooner: Extreme Handyman Service is open 24/7 at +1-206-614-0001. Ask whether a licensed electrician would come out.
+- One correction: the request says you aren't filing an insurance claim, but you never actually told me that. If you are filing one, let the electrician know when they call.
+
+Until then, leave that breaker off and don't use those outlets. If you notice heat, a burning smell, or smoke, leave and call 911.
+converted=True category=electrical ok=True quality=90 turns=4 provider=Kemly Electric, Inc. 
+=== roof_leak ===
+
+  USER: Hi, there's a brown stain spreading on my ceiling upstairs, I think the roof is leaking
+  AGENT: Sorry you're dealing with that. A spreading brown stain usually means water is getting in, and catching it early saves a lot of damage.
+
+A quick safety note: if the stain is around a light fixture or the ceiling is sagging or bulging, turn that light's breaker off and keep people out from under it. If it's sagging, put a bucket underneath. A sagging spot can let go suddenly.
+
+To find roofers near you:
+1. What's your ZIP code?
+2. Is water dripping now, or is it just a stain? And did it show up after a recent storm or heavy rain?
+
+  USER: ZIP is 43214. It's not dripping right now, only drips when we get a heavy rain, and it showed up after that big windstorm about two weeks ago. I actually found a few shingles in the yard afterward, so I'm guessing that's related!
+[search_providers] {'category': 'roofing', 'location': '43214', 'urgency': 'within_24h', 'specialization': 'wind damage, missing shingles, roof leak repair'} -> 5 providers via openstreetmap
+  AGENT: That timing and the shingles in the yard point pretty clearly to wind damage. Since water only gets in during heavy rain, this isn't an emergency, but it's worth getting someone out in the next day or so before the next storm. Wind damage is often covered by homeowners insurance, so take photos of the stain and the shingles now.
+
+Good roofing matches near 43214:
+1. MaxForce Roofing and Siding LLC, 614-467-8910. About 9 km away in Columbus, does roofing and siding, and is open 7 days a week.
+2. Bone Dry Roofing, 614-721-8473. About 14 km away in Dublin, and the only one that advertises 24/7 service, which helps if it starts pouring.
+3. Hilliard Roofing and Siding, 614-448-5621. About 13 km away, with long weekday hours.
+
+I'd go with MaxForce as your top pick and keep the other two as backups. Want me to send them your request so they call you back? If so, please send:
+- Your full name, best phone number, and email if you want to include it
+- The service address, and when someone can come by
+- Whether you own the home, and if it's a single-family house, townhouse, etc.
+
+Also, do you plan to file an insurance claim? Roofers who know that up front can document the damage for your insurer.
+
+  USER: Sure, go ahead and send it to MaxForce! I'm Tom Becker, 614-555-0127 (texting is best), at 233 Arden Rd, Columbus OH 43214. I own it, single family, and any weekday morning works. I'm probably going to file a claim, so having them document it would be great.

@@ -1,0 +1,96 @@
+{
+  "lead_id": "LEAD-20261008-2CBC95",
+  "created_at": "2026-10-08T03:20:13+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Jordan Ellis",
+    "phone": "(408) 555-0188",
+    "email": "",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true,
+    "consent_statement": "Yes, that's fine."
+  },
+  "service_location": {
+    "street_address": "1111 Bernardo Ave Apt 7",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "apartment",
+    "ownership": "renter"
+  },
+  "job": {
+    "category": "plumbing",
+    "category_label": "Plumbing",
+    "urgency": "within_24h",
+    "problem_summary": "Kitchen sink is completely clogged and water is standing in both basins. The garbage disposal hums but won't spin.",
+    "details": [
+      "Kitchen sink, double basin: water standing in both basins, not draining at all",
+      "Clogged since last night",
+      "Customer tried a plunger and Drano (chemical drain cleaner is still in the standing water)",
+      "Garbage disposal hums when switched on but doesn't spin (likely jammed); customer told to leave it off",
+      "Renter: landlord approved the customer calling a plumber and will reimburse",
+      "Apartment unit (Apt 7)",
+      "Available weekdays after 5pm",
+      "Customer prefers a phone call"
+    ],
+    "availability": "Weekdays after 5pm",
+    "safety_notes": "Caustic drain cleaner (Drano) is in the standing water in the sink.",
+    "insurance_claim": "no"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/6300323028",
+    "name": "Palo Alto Plumbing Heating & Air",
+    "category": "plumbing",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/6300323028",
+    "phone": "+1-650-856-3400",
+    "website": "https://www.paloaltoplumbing.net",
+    "distance_km": 8.9,
+    "match_reasons": [
+      "tagged as plumbing on OpenStreetMap",
+      "business name matches the service"
+    ]
+  },
+  "backup_providers": [],
+  "quality": {
+    "score": 92,
+    "missing": [
+      "phone_and_email",
+      "backup_provider"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "kitchen sink totally clogged, water won't go down at all"
+    },
+    {
+      "role": "assistant",
+      "text": "That's a pain, especially with dishes piling up. A fully stopped kitchen drain is usually a grease or food clog in the trap or the branch line, and a plumber can usually snake it out.\n\nTwo quick questions so I can find someone nearby:\n1. What's your ZIP code?\n2. Have you tried anything yet, like a plunger, drain cleaner or running the garbage disposal? And is water backing up into the other sink basin or the dishwasher?\n\nOne tip for now: if you've already poured chemical drain cleaner in, tell the plumber, and don't plunge, because it can splash."
+    },
+    {
+      "role": "user",
+      "text": "94087. Water's standing in both basins since last night, and I already tried a plunger and some Drano. Also the disposal just hums when I flip it on but doesn't spin."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that helps. A couple of safety notes first:\n- Since there's Drano in that standing water, don't plunge again and keep your hands out of it. It's caustic. Be sure to tell the plumber it's in there.\n- The humming means the disposal is jammed or its motor is stalled. Turn its switch off and leave it off, since running it like that can burn out the motor. Never reach into it.\n\nHere are the plumbers I found near Sunnyvale 94087:\n1. Palo Alto Plumbing Heating & Air, +1-650-856-3400, about 8.9 km away. This is a dedicated plumbing company, so it's my top pick for the clog and the disposal.\n2. South Bay Builders, +1-408-892-2562, about 5.3 km away. They're closer and listed under plumbing, but they look more like a general builder.\n\nWould you like me to send this job to Palo Alto Plumbing Heating & Air so they call you back? If so, please send me:\n- Your full name and best phone number (and email if you'd like)\n- The service address\n- When someone can come (today, tomorrow, any time windows)\n- Whether you own or rent, and if it's a house, condo, townhouse or apartment"
+    },
+    {
+      "role": "user",
+      "text": "Sure, go with Palo Alto Plumbing. I'm Jordan Ellis, 1111 Bernardo Ave Apt 7, Sunnyvale 94087, and I rent, but my landlord said I can call someone and he'll reimburse me. I'm free after 5pm on weekdays. Phone's only going to them for the callback, right?"
+    },
+    {
+      "role": "assistant",
+      "text": "Got it, Jordan. Yes, your info goes only to Palo Alto Plumbing Heating & Air, and only so they can contact you about this job. I won't add any backup providers.\n\nI still need your phone number. You didn't include it. Do you prefer a call or a text?\n\nOnce I have it, here's the consent question: Do you agree to let me share your name, phone number, address (1111 Bernardo Ave Apt 7, Sunnyvale, CA 94087) and the job details with Palo Alto Plumbing Heating & Air so they can contact you? The job details are both basins clogged since last night, plunger and Drano tried, disposal hums but won't spin, you're renting with your landlord's OK, and you're available weekdays after 5pm. Just answer yes or no along with your number."
+    },
+    {
+      "role": "user",
+      "text": "Yes, that's fine. It's 408-555-0188, and a call is better than a text."
+    },
+    {
+      "role": "assistant",
+      "text": "You're all set, Jordan. Your request is created and queued for Palo Alto Plumbing Heating & Air.\n\n- Lead ID: LEAD-20261008-2CBC95\n- Provider: Palo Alto Plumbing Heating & Air, +1-650-856-3400\n\nThe request notes that you prefer a call, you're free weekdays after 5pm, there's Drano in the standing water, and the disposal is jammed. I can't confirm when they'll see it. Since your sink is out of commission, it's worth calling them directly and giving them the lead ID.\n\nUntil they come, leave the disposal switch off and keep your hands out of the sink. Keep your receipt for your landlord."
+    }
+  ]
+}

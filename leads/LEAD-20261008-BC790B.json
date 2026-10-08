@@ -1,0 +1,115 @@
+{
+  "lead_id": "LEAD-20261008-BC790B",
+  "created_at": "2026-10-08T03:27:18+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Tom Becker",
+    "phone": "(408) 555-0127",
+    "email": "",
+    "preferred_contact_method": "text",
+    "consent_to_share": true,
+    "consent_statement": "Yes, go ahead and share my info with both of them."
+  },
+  "service_location": {
+    "street_address": "1268 Inverness Way",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "roofing",
+    "category_label": "Roofing",
+    "urgency": "within_week",
+    "problem_summary": "Roof leak suspected after last week's windstorm: a brown stain about the size of a dinner plate is spreading on the hallway ceiling. Several shingles were found in the yard after the storm. Water only comes in during heavy rain.",
+    "details": [
+      "Hallway ceiling stain, about dinner-plate size, spreading",
+      "Not currently dripping; leaks only during heavy rain",
+      "Ceiling is not sagging; stain is not near a light fixture",
+      "First noticed after last week's windstorm; a few shingles found in yard",
+      "Composition shingle roof, about 20 years old",
+      "One-story single-family home, owner-occupied",
+      "Homeowner has not inspected the attic yet",
+      "Customer prefers text"
+    ],
+    "availability": "Any weekday morning",
+    "safety_notes": "",
+    "insurance_claim": "unsure - plans to contact insurer"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:way/228014258",
+    "name": "Waterproofing Associates",
+    "category": "roofing",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/way/228014258",
+    "phone": "+1-650-937-1299",
+    "website": "http://www.roofwa.com/",
+    "address": "975 Terra Bella Avenue",
+    "distance_km": 6.6,
+    "hours": "Mo-Fr 07:00-16:00",
+    "match_reasons": [
+      "tagged as roofing on OpenStreetMap",
+      "business name matches the service",
+      "specialization match: roof"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:way/392337870",
+      "name": "Falcon Roofing",
+      "category": "roofing",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/way/392337870",
+      "phone": "+1-650-961-3200",
+      "website": "https://www.falcon-roofing.com/",
+      "address": "990 Terra Bella Avenue",
+      "distance_km": 6.6,
+      "match_reasons": [
+        "tagged as roofing on OpenStreetMap",
+        "business name matches the service",
+        "specialization match: roof"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 97,
+    "missing": [
+      "phone_and_email"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hi, there's a brown stain spreading on my ceiling, I think the roof is leaking"
+    },
+    {
+      "role": "assistant",
+      "text": "Sorry you're dealing with that. A spreading ceiling stain usually means water is getting in somewhere above it, and catching it early saves a lot of drywall and insulation damage.\n\nA quick safety note: if the stain is near a light fixture or the ceiling is sagging or bulging, turn off that circuit at the breaker and keep people out from under it. A sagging spot can hold pooled water.\n\nTwo quick questions:\n1. What's your ZIP code (or city and state)?\n2. Is water actively dripping right now, or is it just a stain so far? Does it get worse when it rains?"
+    },
+    {
+      "role": "user",
+      "text": "Thanks for the tip, it's not near a light and it isn't sagging, just a stain about the size of a dinner plate in the hallway. I'm in Sunnyvale, CA 94087, and it's not dripping right now, only during heavy rain."
+    },
+    {
+      "role": "assistant",
+      "text": "Good, no sagging and no active drip. That makes this a \"soon\" job rather than an emergency, but you'll want it fixed before the next big storm. Water often travels along rafters before it drips, so the actual leak may not be right above the stain. A roofer will usually check the attic and the flashing around vents or chimneys.\n\nHere are roofers near 94087:\n1. Waterproofing Associates, 975 Terra Bella Avenue (about 6.6 km away). They specialize in roofing and waterproofing, and their listed hours are Mon\u2013Fri 7am\u20134pm. Phone: +1-650-937-1299\n2. Falcon Roofing, 990 Terra Bella Avenue (about 6.6 km). Same distance and also a dedicated roofer. Phone: +1-650-961-3200\n3. Cosmos Roofing, 1901 Old Middlefield Way (about 7.8 km). A good backup option. Phone: +1-650-969-7663\n\nI'd suggest Waterproofing Associates first, with Falcon as the backup. I can send them your request so they call you back. If you'd like that, please send:\n- Your full name and best phone number (and email if you want)\n- The street address of the house\n- When someone could come out\n- Whether you own or rent, and whether it's a house, townhouse or condo\n\nAnything you know about the roof would also help, like its age, whether it's shingle or tile, and whether you've been up in the attic."
+    },
+    {
+      "role": "user",
+      "text": "Waterproofing Associates sounds good! I'm Tom Becker, 408-555-0127 (texting is best), at 1268 Inverness Way, Sunnyvale. I own the place, a one-story single family house, and any weekday morning works for me. The roof is composition shingle, about 20 years old. I first noticed the stain after last week's windstorm and found a few shingles in the yard. I haven't been up in the attic yet."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, Tom. Those shingles in the yard are a strong clue. Windstorms often lift or tear off shingles, and that's a common way water gets in. Since this is storm damage, you might want to check with your insurer. Some policies cover wind damage, and the roofer can document what they find.\n\nBefore I send anything, two quick things:\n1. Is it okay for me to share your name, phone number (408-555-0127, text preferred), address (1268 Inverness Way, Sunnyvale, CA 94087) and the job details with Waterproofing Associates, with Falcon Roofing as the backup, so they can contact you? (yes/no)\n2. Are you planning to file an insurance claim? Yes, no or unsure is fine."
+    },
+    {
+      "role": "user",
+      "text": "Yes, go ahead and share my info with both of them. Insurance is a good idea I hadn't thought of, so I'd say unsure for now, but I'll give my insurer a call."
+    },
+    {
+      "role": "assistant",
+      "text": "You're all set, Tom. Your request is queued for Waterproofing Associates, with Falcon Roofing as the backup.\n\n- Lead ID: LEAD-20261008-BC790B\n- Waterproofing Associates: +1-650-937-1299 (Mon\u2013Fri 7am\u20134pm)\n- Backup, Falcon Roofing: +1-650-961-3200\n\nI can't see when they pick up the request. If you don't hear back in a day or two, or if heavy rain is coming, give them a call directly and mention your lead ID.\n\nUntil then, take photos of the ceiling stain and those shingles from the yard. They'll be useful when you talk to your insurer. Good luck!"
+    }
+  ]
+}

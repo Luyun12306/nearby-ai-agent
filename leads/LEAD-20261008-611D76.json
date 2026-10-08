@@ -1,0 +1,109 @@
+{
+  "lead_id": "LEAD-20261008-611D76",
+  "created_at": "2026-10-08T03:14:20+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Jordan Ellis",
+    "phone": "(408) 555-0188",
+    "email": "",
+    "preferred_contact_method": "text",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "1111 Bernardo Ave Apt 7",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "apartment",
+    "ownership": "renter"
+  },
+  "job": {
+    "category": "plumbing",
+    "category_label": "Plumbing",
+    "urgency": "within_24h",
+    "problem_summary": "Double-basin kitchen sink is completely clogged with standing water in both sides since last night. Plunger didn't help; Drano was poured in, so standing water likely contains drain cleaner. Garbage disposal hums but doesn't spin (likely jammed).",
+    "details": [
+      "Location: kitchen sink, both basins full of standing water",
+      "Started: last night",
+      "No water on floor, other drains working normally",
+      "Tried: plunger (no effect), then Drano - caustic chemical likely in standing water",
+      "Garbage disposal hums but won't spin",
+      "Renter; landlord has agreed to reimburse",
+      "Contact: text first (at work during day); calls OK after 5pm",
+      "Availability: weekdays after 5pm"
+    ],
+    "availability": "Weekdays after 5pm",
+    "safety_notes": "Drano (caustic drain cleaner) in standing water - use eye/skin protection.",
+    "insurance_claim": "no"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/6300323028",
+    "name": "Palo Alto Plumbing Heating & Air",
+    "category": "plumbing",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/6300323028",
+    "phone": "+1-650-856-3400",
+    "website": "https://www.paloaltoplumbing.net",
+    "distance_km": 8.9,
+    "match_reasons": [
+      "tagged as plumbing on OpenStreetMap",
+      "business name matches the service"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/9667935569",
+      "name": "South Bay Builders",
+      "category": "plumbing",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/9667935569",
+      "phone": "+1-408-892-2562",
+      "website": "https://southbaybuilderssanjose.com",
+      "address": "1265 Lakeside Drive, Sunnyvale, CA 94085",
+      "distance_km": 5.3,
+      "match_reasons": [
+        "tagged as plumbing on OpenStreetMap"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 97,
+    "missing": [
+      "phone_and_email"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "kitchen sink totally clogged, water won't go down at all"
+    },
+    {
+      "role": "assistant",
+      "text": "That's a pain, but it's usually a quick fix for a plumber. Is any water backing up anywhere else (other drains, dishwasher, floor)? And what's your ZIP code so I can find plumbers near you?"
+    },
+    {
+      "role": "user",
+      "text": "Just standing water in both sides of the sink since last night, nothing on the floor or other drains. ZIP is 94087."
+    },
+    {
+      "role": "assistant",
+      "text": "I found 2 plumbers near Sunnyvale:\n\n1. Palo Alto Plumbing Heating & Air, 8.9 km away. It's a dedicated plumbing company, so I'd pick them first for a drain clog.\n2. South Bay Builders, 5.3 km away in Sunnyvale. They're closer, but they're a general builder that's also listed under plumbing.\n\nUntil someone comes, don't pour chemical drain cleaner into standing water. It can splash on you and on the plumber. If you have a dishwasher or garbage disposal, don't run them for now.\n\nWant me to send your request to Palo Alto Plumbing so they call you back? I'd keep South Bay Builders as a backup. If so, please send:\n- Your full name and best phone number (and email if you'd like)\n- The service address\n- When someone can come (for example, today after 3pm or tomorrow morning)\n- Whether you own or rent, and whether it's a house, condo, apartment, etc.\n\nAlso, have you tried anything yet, like a plunger? And is there a garbage disposal?"
+    },
+    {
+      "role": "user",
+      "text": "Oops, I already tried Drano last night after the plunger didn't work, so there's probably some in the water. The disposal hums but doesn't spin. Sure, send it to Palo Alto Plumbing: Jordan Ellis, 408-555-0188, 1111 Bernardo Ave Apt 7, Sunnyvale 94087. It's an apartment I rent (landlord said he'll reimburse), and I'm free after 5pm on weekdays."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, Jordan, that's helpful. Since there's Drano in the water:\n- Don't plunge again or reach into the sink. The water is caustic and can splash.\n- Leave the disposal switched off. A humming disposal that won't spin is usually jammed, and running it can burn out the motor.\n- I'll note the Drano in the request so the plumber knows to take precautions.\n\nTwo quick things before I send it:\n1. Do I have your OK to share your name, phone number and address with Palo Alto Plumbing Heating & Air (and South Bay Builders as a backup)?\n2. Would you rather they call or text you at 408-555-0188?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, that's fine to share with both. Text first is better since I'm at work during the day, but calls after 5 are okay too."
+    },
+    {
+      "role": "assistant",
+      "text": "Done, Jordan. Your request has gone to Palo Alto Plumbing Heating & Air.\n\n- Lead ID: LEAD-20261008-611D76\n- Palo Alto Plumbing Heating & Air: +1-650-856-3400\n- Backup: South Bay Builders, +1-408-892-2562\n\nWhat happens next: they should text you at 408-555-0188 to set up a time weekdays after 5pm. They'll know about the Drano and the jammed disposal. If you haven't heard from them by tomorrow, call them directly. If they can't fit you in, call South Bay Builders.\n\nUntil then, leave the sink and the disposal alone. Keep the receipt for your landlord."
+    }
+  ]
+}

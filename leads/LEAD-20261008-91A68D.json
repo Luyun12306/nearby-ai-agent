@@ -1,0 +1,98 @@
+{
+  "lead_id": "LEAD-20261008-91A68D",
+  "created_at": "2026-10-08T03:12:03+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Dave Kowalski",
+    "phone": "(408) 555-0199",
+    "email": "",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "1455 Remington Dr",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "hvac",
+    "category_label": "Heating & Air Conditioning",
+    "urgency": "emergency",
+    "problem_summary": "Furnace not heating: the blower fan runs but blows cold air. The house is down to 57\u00b0F with the thermostat set to 70\u00b0F, and a toddler lives in the home.",
+    "details": [
+      "Furnace blower runs but air is cold",
+      "Indoor temp 57\u00b0F, thermostat set to 70\u00b0F",
+      "No gas smell reported",
+      "Toddler in the home, so sooner is better",
+      "Homeowner available anytime today or tomorrow",
+      "Single-family home, owner-occupied"
+    ],
+    "availability": "Anytime today or tomorrow; ASAP preferred",
+    "safety_notes": "No gas smell reported. Toddler in the home with the indoor temperature at 57\u00b0F.",
+    "insurance_claim": ""
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/6300323028",
+    "name": "Palo Alto Plumbing Heating & Air",
+    "category": "hvac",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/6300323028",
+    "phone": "+1-650-856-3400",
+    "website": "https://www.paloaltoplumbing.net",
+    "distance_km": 8.9,
+    "match_reasons": [
+      "business name matches the service",
+      "specialization match: heat"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/10160960513",
+      "name": "ProTemp Mechanical Incorporated",
+      "category": "hvac",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/10160960513",
+      "website": "https://protemp.net/",
+      "address": "3350 Scott Boulevard, Santa Clara, CA 95054",
+      "distance_km": 5.4,
+      "match_reasons": [
+        "business name matches the service"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 97,
+    "missing": [
+      "phone_and_email"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "my furnace stopped working and the house is getting really cold"
+    },
+    {
+      "role": "assistant",
+      "text": "I'm sorry, a cold house is miserable. Let's get someone out to you.\n\nOne safety point first: if you smell gas (a rotten-egg smell) near the furnace, leave the house now and call your gas utility or 911 from outside.\n\nA couple of quick questions:\n1. What's your ZIP code (or city and state)?\n2. What's the furnace doing? Is it completely dead, is the fan running but blowing cold air, or is there an error light? And roughly how cold is it inside now?"
+    },
+    {
+      "role": "user",
+      "text": "no gas smell. 94087, sunnyvale. fan runs but its blowing cold air, its 57 in here and thermostat is set to 70"
+    },
+    {
+      "role": "assistant",
+      "text": "57\u00b0F is too cold to wait on, so I treated this as urgent. A fan that runs but blows cold air usually means the burner isn't lighting. That's often an ignitor, flame sensor or safety switch problem, and it's a common repair.\n\nWhile you wait, a few safe checks:\n- Make sure the thermostat is set to HEAT (not COOL or OFF) and the fan is on AUTO, not ON.\n- If the furnace filter looks very dirty, replace it. A clogged filter can make the furnace shut its burner off for safety.\n\nHere's who I found near 94087:\n1. Palo Alto Plumbing Heating & Air, 650-856-3400. This is my top pick. They specifically list heating work and have a phone number listed. They're about 8.9 km away.\n2. ProTemp Mechanical Incorporated in Santa Clara is closer (5.4 km), but the listing has no phone number, only their website (protemp.net).\n\nI can send your request to Palo Alto Plumbing Heating & Air so they call you back. To do that, I need:\n1. Your full name and the best phone number to reach you (and email if you'd like)\n2. The street address of the house\n3. When someone can come, whether you own or rent, and whether it's a single-family home, townhouse or condo\n\nDo I have your OK to share your contact info with them?"
+    },
+    {
+      "role": "user",
+      "text": "yeah go ahead. dave kowalski, (408) 555-0199, 1455 remington dr sunnyvale 94087. i own it, single family, anytime today or tomorrow works, sooner is better since i've got a toddler here"
+    },
+    {
+      "role": "assistant",
+      "text": "Done, Dave. Your request is ready and queued for Palo Alto Plumbing Heating & Air.\n\n- Lead ID: LEAD-20261008-91A68D\n- Provider: Palo Alto Plumbing Heating & Air, 650-856-3400 (paloaltoplumbing.net)\n\nThey should call you at (408) 555-0199 to set up a time. Since you have a toddler at home, I'd also call them yourself now and give them your lead ID. That's usually the fastest way to get a same-day spot. If they can't come today or tomorrow, let me know and I'll look for other options.\n\nUntil then, keep your little one in one warm room with the door closed and add layers. If you use a space heater, keep it at least 3 feet from bedding, curtains and little hands, and don't leave it running overnight."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "lead_id": "LEAD-20261008-D4FB68",
+  "created_at": "2026-10-08T03:25:34+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Maria Lopez",
+    "phone": "(408) 555-0142",
+    "email": "maria.lopez@example.com",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true,
+    "consent_statement": "Yes, that's fine. Please send it."
+  },
+  "service_location": {
+    "street_address": "1032 Hollenbeck Ave",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "water_damage_restoration",
+    "category_label": "Water Damage Restoration",
+    "urgency": "emergency",
+    "problem_summary": "Storm water began entering the basement last night and is still coming in along the back wall. About 2 inches of standing water covers the basement floor. Needs water extraction and drying.",
+    "details": [
+      "Location: basement, water entering along back wall",
+      "Extent: approx. 2 inches of water across the floor",
+      "Started last night after the storm",
+      "Water still coming in",
+      "Outlets are not underwater",
+      "Older single-family home, owner-occupied",
+      "Insurance: State Farm, likely filing a claim"
+    ],
+    "availability": "Home all day, ASAP",
+    "safety_notes": "Standing water in basement; homeowner reports outlets not submerged.",
+    "insurance_claim": "yes - likely filing with State Farm"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/7318153333",
+    "name": "Clearway Restoration",
+    "category": "water_damage_restoration",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/7318153333",
+    "phone": "+1-408-457-0826",
+    "website": "https://clearwayrestoration.com/",
+    "address": "2811 Barcells Avenue, Santa Clara, CA 95051",
+    "distance_km": 5.8,
+    "hours": "24/7",
+    "match_reasons": [
+      "business name matches the service",
+      "advertises 24/7 or emergency service"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/7211322288",
+      "name": "Reactic Restoration",
+      "category": "water_damage_restoration",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/7211322288",
+      "phone": "+1-408-998-4840",
+      "website": "https://reacticrestoration.com/san-jose/",
+      "address": "1211 Park Avenue, San Jose, CA 95126",
+      "distance_km": 11.4,
+      "hours": "24/7",
+      "match_reasons": [
+        "business name matches the service",
+        "advertises 24/7 or emergency service"
+      ]
+    },
+    {
+      "provider_id": "osm:node/13030568486",
+      "name": "Servpro",
+      "category": "water_damage_restoration",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/13030568486",
+      "phone": "+1 650-770-2992",
+      "website": "https://servpro.com",
+      "address": "1224 Alderwood Avenue, Sunnyvale, CA 94089",
+      "distance_km": 6.6,
+      "match_reasons": [
+        "business name matches the service"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 100,
+    "missing": []
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Water started coming into my basement last night after the storm. I don't know who to call."
+    },
+    {
+      "role": "assistant",
+      "text": "I'm sorry, that's stressful. For water coming in after a storm, a water damage restoration company is usually the right first call. They can pump out the water and dry things out, and they act fast to prevent mold.\n\nOne safety note first: if the water is near outlets, cords, appliances, or your electrical panel, stay out of the water. Only turn off power to the basement at the breaker if you can reach the panel without standing in water. If you can't, leave the power on and stay out of the basement.\n\nTwo quick questions so I can find someone near you:\n1. What's your ZIP code?\n2. About how deep is the water, and is it still coming in?"
+    },
+    {
+      "role": "user",
+      "text": "It's 94087. Maybe 2 inches across the floor, coming in along the back wall, and the outlets aren't underwater, thankfully."
+    },
+    {
+      "role": "assistant",
+      "text": "Good that the outlets are dry. Here are the best matches near Sunnyvale:\n\n1. Clearway Restoration: 5.8 km away in Santa Clara, open 24/7. This is my top pick. Phone: +1-408-457-0826\n2. Reactic Restoration: 11.4 km away in San Jose, also open 24/7. Phone: +1-408-998-4840\n3. Servpro: 6.6 km away in Sunnyvale. I don't have their hours listed. Phone: +1 650-770-2992\n\nWhile you wait, take photos and video of the water and anything that got wet, in case you file an insurance claim.\n\nI can send your request to Clearway Restoration so they call you back. If you'd like that, please send me:\n- Your full name and best phone number (and email if you want)\n- The street address\n- When someone can come (as soon as possible, or a time window)\n- Whether you own or rent, and the type of home (house, townhouse, condo, etc.)\n- Whether you plan to file an insurance claim (yes, no, or not sure)"
+    },
+    {
+      "role": "user",
+      "text": "Yes please, send it to Clearway. I'm Maria Lopez, 408-555-0142, maria.lopez@example.com, at 1032 Hollenbeck Ave in Sunnyvale. I own it, it's an older single-family house, and I'm home all day so ASAP is great. I have State Farm and will probably file a claim."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, Maria. One last check before I send it.\n\nIs it OK for me to share your name, phone (408-555-0142), email (maria.lopez@example.com), address (1032 Hollenbeck Ave, Sunnyvale, CA 94087) and the details of the flooding with Clearway Restoration so they can contact you? Please reply yes or no."
+    },
+    {
+      "role": "user",
+      "text": "Yes, that's fine. Please send it."
+    },
+    {
+      "role": "assistant",
+      "text": "I've created your request and it's queued for Clearway Restoration. The lead ID is LEAD-20261008-D4FB68.\n\nWater is still coming in, so I'd also call them directly at +1-408-457-0826. They're open 24/7. If they can't come soon, call Reactic Restoration at +1-408-998-4840.\n\nUntil help arrives, keep taking photos for your State Farm claim and stay away from any water near electrical equipment."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "lead_id": "LEAD-20261008-D59357",
+  "created_at": "2026-10-08T03:09:21+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Priya Raman",
+    "phone": "(206) 555-0163",
+    "email": "priya.r@example.com",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "3810 Fremont Ave N Unit 204",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98103",
+    "property_type": "condo",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "electrical",
+    "category_label": "Electrical",
+    "urgency": "within_24h",
+    "problem_summary": "A kitchen outlet popped and sparked yesterday evening, and about half the kitchen lost power. The breaker for that circuit won't stay reset, which suggests a short on the circuit.",
+    "details": [
+      "Location: kitchen, condo unit 204",
+      "Outlet popped and sparked yesterday evening",
+      "About half the kitchen has no power",
+      "Breaker for that circuit trips again right after reset",
+      "No burning smell now",
+      "Customer has stopped resetting the breaker",
+      "Availability: weekday afternoons this week"
+    ],
+    "availability": "Weekday afternoons this week",
+    "safety_notes": "Outlet sparked; breaker won't hold. Customer told to leave the circuit off and not use the affected outlets. No burning smell or heat reported currently.",
+    "insurance_claim": "no"
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/7297884539",
+    "name": "Kemly Electric, Inc.",
+    "category": "electrical",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/7297884539",
+    "website": "https://www.kemlyelectric.com/",
+    "distance_km": 2.4,
+    "match_reasons": [
+      "business name matches the service"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/13843931177",
+      "name": "Extreme Handyman Service",
+      "category": "electrical",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/13843931177",
+      "phone": "+1-206-614-0001",
+      "website": "https://extremehandyman.com/",
+      "email": "Tommy@extremehandyman.com",
+      "address": "744 North 34th Street, Seattle, WA 98103",
+      "distance_km": 2.7,
+      "hours": "24/7",
+      "match_reasons": [
+        "tagged as electrical on OpenStreetMap",
+        "advertises 24/7 or emergency service"
+      ]
+    },
+    {
+      "provider_id": "osm:node/2462174093",
+      "name": "Cochran",
+      "category": "electrical",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/2462174093",
+      "website": "https://www.cochraninc.com/",
+      "address": "12500 Aurora Avenue North, Seattle 98133",
+      "distance_km": 5.2,
+      "match_reasons": [
+        "tagged as electrical on OpenStreetMap"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 90,
+    "missing": [
+      "real_provider_with_phone"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "One of the outlets in my kitchen sparked and now half the kitchen has no power."
+    },
+    {
+      "role": "assistant",
+      "text": "That sounds scary. I'm glad you're okay. First, a few safety steps:\n\n- Don't plug anything into that outlet or the others that lost power, and unplug anything that's in them now if you can do it without touching scorch marks.\n- If you smell burning, see smoke, or the outlet or wall plate feels hot, leave the house and call 911.\n- If none of that is happening, it's probably a tripped breaker or GFCI. Leave it off for now. Don't keep resetting it, because a breaker that trips again after a spark is a sign of a real fault.\n\nA licensed electrician should take a look. Two quick questions so I can find someone near you:\n\n1. What's your ZIP code (or city and state)?\n2. Is anything still warm or smelling burnt, or did everything settle down after the spark?"
+    },
+    {
+      "role": "user",
+      "text": "It's Seattle, 98103. No burning smell now; it popped and sparked yesterday evening, and the breaker for that circuit won't stay reset when I try."
+    },
+    {
+      "role": "assistant",
+      "text": "Thanks, that helps. A breaker that won't stay reset after a spark usually means there's a short on that circuit, so you were right to stop resetting it. Leave the breaker off until someone looks at it. Here's what I found near 98103:\n\n1. Kemly Electric, Inc. (2.4 km away): an electrical company close to you. My top pick for a short like this. The listing has no phone number, only a website: https://www.kemlyelectric.com/\n2. Extreme Handyman Service (2.7 km away): open 24/7, so it's your fastest option at +1-206-614-0001. It's a handyman business, though, so ask whether a licensed electrician would do the job.\n3. Cochran (5.2 km away, Aurora Ave N): a larger electrical contractor that's a bit farther out. Website: https://www.cochraninc.com/\n\nI can send your request to Kemly Electric and have them call you back, with the others as backups. To do that, I'll need:\n\n- Your full name, best phone number, and email if you'd like\n- The street address where the work is (Seattle, WA 98103), and whether it's a house, condo, apartment, etc. Do you own or rent?\n- When someone can come by\n\nAlso, is it okay for me to share your contact info with Kemly Electric (and the backups if Kemly can't take it)?"
+    },
+    {
+      "role": "user",
+      "text": "Quick question before I send everything: why do you need to know if I own or rent? For the record, I'm Priya Raman, 206-555-0163, and it's a condo in 98103. I'd prefer weekday afternoons this week."
+    },
+    {
+      "role": "assistant",
+      "text": "Good question. Electricians ask because if you rent, the landlord or property manager usually has to approve and pay for the work. In a condo, the HOA can sometimes matter too, for example if the problem traces back to shared wiring. Knowing this up front means the electrician doesn't show up and then can't start. It's optional, so if you'd rather not say, I'll leave it as unknown.\n\nThanks, Priya. I have your name, phone, condo in 98103, and weekday afternoons this week. Two last things:\n\n1. Your street address, including the unit number\n2. Is it okay for me to share your contact info with Kemly Electric, and with Extreme Handyman Service or Cochran as backups? And do you own or rent, if you're comfortable saying?"
+    },
+    {
+      "role": "user",
+      "text": "That makes sense, thanks. I own it, and the address is 3810 Fremont Ave N Unit 204, Seattle WA 98103. Yes, you can share my info with Kemly and the backups. My email is priya.r@example.com if they want it."
+    },
+    {
+      "role": "assistant",
+      "text": "Your request is in, Priya. Your lead ID is LEAD-20261008-D59357, and it's going to Kemly Electric, Inc.\n\n- What's next: Kemly should call you at 206-555-0163 to set up a weekday afternoon visit this week. If they can't take it, Extreme Handyman Service or Cochran may contact you instead.\n- To reach Kemly directly: their listing has no phone number, but you can contact them through https://www.kemlyelectric.com/ and mention your lead ID.\n- If you'd like it fixed sooner: Extreme Handyman Service is open 24/7 at +1-206-614-0001. Ask whether a licensed electrician would come out.\n- One correction: the request says you aren't filing an insurance claim, but you never actually told me that. If you are filing one, let the electrician know when they call.\n\nUntil then, leave that breaker off and don't use those outlets. If you notice heat, a burning smell, or smoke, leave and call 911."
+    }
+  ]
+}

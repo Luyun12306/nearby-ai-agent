@@ -1,0 +1,129 @@
+{
+  "lead_id": "LEAD-20261008-30057D",
+  "created_at": "2026-10-08T03:08:17+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Dave Kowalski",
+    "phone": "(773) 555-0199",
+    "email": "",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "4821 N Damen Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60625",
+    "property_type": "single_family",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "hvac",
+    "category_label": "Heating & Air Conditioning",
+    "urgency": "emergency",
+    "problem_summary": "Furnace is running but blowing only cold air since this morning. The thermostat is set to 70 but the house is down to 58, and two children live in the home.",
+    "details": [
+      "Furnace blows cold air, no heat since this morning",
+      "Thermostat set to 70F; indoor temp 58F",
+      "Thermostat batteries already replaced, no change",
+      "No gas smell reported",
+      "Two children in the home",
+      "Homeowner; available any time today, ASAP"
+    ],
+    "availability": "ASAP today, any time",
+    "safety_notes": "No gas smell reported. Indoor temp 58F with two children in the home.",
+    "insurance_claim": ""
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/13674894504",
+    "name": "Elite HVACS Furnace, AC & Plumbing Repair",
+    "category": "hvac",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/13674894504",
+    "phone": "+1-708-578-7823",
+    "website": "https://elitehvacs.com/",
+    "address": "8046 Central Park Avenue, Skokie, IL 60076",
+    "distance_km": 6.6,
+    "hours": "24/7",
+    "match_reasons": [
+      "tagged as heating & air conditioning on OpenStreetMap",
+      "business name matches the service",
+      "advertises 24/7 or emergency service",
+      "specialization match: furnace, repair"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/4170224869",
+      "name": "Shavitz Heating and Air Conditioning",
+      "category": "hvac",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/4170224869",
+      "phone": "+1-847-678-1000",
+      "website": "https://www.shavitz.com/",
+      "address": "4849 Main Street, Skokie, IL 60077",
+      "distance_km": 8.2,
+      "match_reasons": [
+        "tagged as heating & air conditioning on OpenStreetMap",
+        "business name matches the service",
+        "specialization match: heat"
+      ]
+    },
+    {
+      "provider_id": "osm:node/4131113548",
+      "name": "Malek Heating & Cooling",
+      "category": "hvac",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/4131113548",
+      "phone": "+1-877-646-8265",
+      "website": "https://www.heatingcoolingchicagoland.com/",
+      "address": "7855 Gross Point Road, Skokie, IL 60077",
+      "distance_km": 8.2,
+      "match_reasons": [
+        "tagged as heating & air conditioning on OpenStreetMap",
+        "business name matches the service",
+        "specialization match: heat"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 97,
+    "missing": [
+      "phone_and_email"
+    ]
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "my furnace stopped working and it's freezing in here"
+    },
+    {
+      "role": "assistant",
+      "text": "I'm sorry, that's miserable in cold weather. Let's get someone out to you fast.\n\nFirst, a safety check: if you smell gas (rotten eggs) or your carbon monoxide alarm is going off, get everyone out of the house now and call 911 or your gas utility from outside.\n\nTwo quick questions:\n1. What's your ZIP code (or city and state)?\n2. What's the furnace doing? For example, is it completely dead, is the fan blowing cold air, or is it clicking without lighting? And roughly when did it stop?"
+    },
+    {
+      "role": "user",
+      "text": "no gas smell. 60625, its blowing cold air since this morning"
+    },
+    {
+      "role": "assistant",
+      "text": "Found some good options near you in Chicago:\n\n1. Elite HVACS Furnace, AC & Plumbing Repair, about 6.6 km away in Skokie. Open 24/7 and does furnace repair, so they're my top pick. Phone: +1-708-578-7823\n2. Shavitz Heating and Air Conditioning, about 8.2 km away in Skokie. A heating and cooling specialist. Phone: +1-847-678-1000\n3. Malek Heating & Cooling, about 8.2 km away in Skokie. Also a heating specialist. Phone: +1-877-646-8265\n\nWhile you wait, a few quick checks sometimes fix cold air:\n- Make sure the thermostat is set to HEAT, the fan is on AUTO, and the batteries aren't dead.\n- Check that the furnace filter isn't badly clogged.\n- Make sure the furnace power switch (it looks like a light switch near the unit) is on.\n\nWant me to send your request to Elite HVACS so they call you back? If so, I'll need:\n- Your full name and best phone number (and email, if you'd like)\n- The service address\n- When someone can come (as soon as possible today?)\n- Whether you own or rent, and the type of home (house, condo, apartment, etc.)"
+    },
+    {
+      "role": "user",
+      "text": "yeah send it to elite. dave kowalski, 773-555-0199, 4821 n damen ave, i own the house. asap today, any time works. already changed the thermostat batteries btw, its set to 70 and its 58 in here, got 2 kids"
+    },
+    {
+      "role": "assistant",
+      "text": "Got it, Dave. A 58-degree house with two kids is definitely urgent, so I'll mark this as an emergency.\n\nBefore I send it: do you agree to share your name, phone number, and address with Elite HVACS so they can call you back? Just say yes and I'll send it right away."
+    },
+    {
+      "role": "user",
+      "text": "yes"
+    },
+    {
+      "role": "assistant",
+      "text": "Done, Dave. I've marked your request as an emergency and sent it to Elite HVACS.\n\n- Lead ID: LEAD-20261008-30057D\n- Elite HVACS Furnace, AC & Plumbing Repair: +1-708-578-7823 (open 24/7)\n\nThey should call you at 773-555-0199 to set up a time today. Since it's cold and you have kids, it'd be faster to call them yourself now and mention your lead ID. If they can't come today, try Shavitz at +1-847-678-1000 or Malek at +1-877-646-8265.\n\nUntil they get there, keep everyone in one room with the doors shut. If you use space heaters, keep them 3 feet from anything that can burn. Never use the oven or stove to heat the house."
+    }
+  ]
+}

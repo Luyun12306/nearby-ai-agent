@@ -1,0 +1,109 @@
+{
+  "lead_id": "LEAD-20261008-B5FF1A",
+  "created_at": "2026-10-08T03:13:05+00:00",
+  "status": "ready_to_dispatch",
+  "customer": {
+    "name": "Priya Raman",
+    "phone": "(408) 555-0163",
+    "email": "priya.r@example.com",
+    "preferred_contact_method": "phone",
+    "consent_to_share": true
+  },
+  "service_location": {
+    "street_address": "820 E Fremont Ave Unit 12",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "zip": "94087",
+    "property_type": "townhouse",
+    "ownership": "owner"
+  },
+  "job": {
+    "category": "electrical",
+    "category_label": "Electrical",
+    "urgency": "within_24h",
+    "problem_summary": "A kitchen outlet sparked with a pop yesterday evening and the breaker tripped. The breaker won't stay on when reset, and about half the kitchen has no power.",
+    "details": [
+      "Location: kitchen outlet; roughly half the kitchen circuit(s) without power",
+      "Single spark/pop yesterday evening, breaker tripped immediately",
+      "Homeowner tried resetting breaker; it will not stay on",
+      "No burning smell now",
+      "Not yet inspected for scorch marks; outlet has not been touched or opened",
+      "Breaker being left off until electrician arrives"
+    ],
+    "availability": "Weekday afternoons this week",
+    "safety_notes": "Possible short or damaged wiring at the outlet. Breaker is being left off. No current burning smell.",
+    "insurance_claim": ""
+  },
+  "recommended_provider": {
+    "provider_id": "osm:node/13670922064",
+    "name": "WCI Electric",
+    "category": "electrical",
+    "source": "openstreetmap",
+    "source_url": "https://www.openstreetmap.org/node/13670922064",
+    "phone": "+1 408-242-2069",
+    "website": "https://www.wcielectric.com/",
+    "email": "Info@wcielectric.com",
+    "address": "3088 El Camino Real, Santa Clara, CA 95051",
+    "distance_km": 4.9,
+    "hours": "Mo-Fr 08:00-17:00",
+    "match_reasons": [
+      "tagged as electrical on OpenStreetMap",
+      "business name matches the service"
+    ]
+  },
+  "backup_providers": [
+    {
+      "provider_id": "osm:node/13030591255",
+      "name": "Flores Electric",
+      "category": "electrical",
+      "source": "openstreetmap",
+      "source_url": "https://www.openstreetmap.org/node/13030591255",
+      "phone": "+1 408-899-8450",
+      "website": "https://www.floreselectric.net",
+      "address": "3687 Enochs Street, Santa Clara, CA 95051",
+      "distance_km": 4.3,
+      "match_reasons": [
+        "tagged as electrical on OpenStreetMap",
+        "business name matches the service"
+      ]
+    }
+  ],
+  "quality": {
+    "score": 100,
+    "missing": []
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "One of the outlets in my kitchen sparked and now half the kitchen has no power."
+    },
+    {
+      "role": "assistant",
+      "text": "That sounds scary. I'm glad you're okay. Here's what to do first:\n\n- Don't use or touch that outlet, and unplug anything that was plugged into it if you can do it safely.\n- If you smell burning, see smoke, or the outlet or wall plate feels warm or looks scorched, turn off the breaker for the kitchen at your panel (or the main breaker if you're not sure which one). Only do this if the panel area is dry.\n- If you see smoke or flames, get everyone out and call 911.\n- For now, don't reset the tripped breaker over and over. If it sparked, there could be a damaged wire or connection behind the outlet.\n\nI'll find a licensed electrician near you. Two quick questions:\n1. What's your ZIP code?\n2. Do you smell burning or see scorch marks on the outlet, or did it just spark once and then lose power?"
+    },
+    {
+      "role": "user",
+      "text": "I'm in 94087. It sparked once with a pop yesterday evening and the breaker tripped; I tried resetting it but it won't stay on, and there's no burning smell now. I haven't looked closely for scorch marks yet. Should I check, or just leave it alone?"
+    },
+    {
+      "role": "assistant",
+      "text": "Good that there's no burning smell. A breaker that won't stay on usually means there's a real fault on that circuit, like a short or a burned connection behind the outlet. So the breaker is doing its job.\n\nAbout checking: you can take a quick look, but don't touch anything. Leave that breaker off, use a flashlight, and look for black or brown marks, melted plastic, or cracks on the outlet and cover plate. Don't take the cover off or poke at it. Whatever you see, the next step is the same: keep the breaker off, stop trying to reset it, and have an electrician find the fault. If you do see scorch marks, mention it so I can pass it along. Use extension cords from working outlets for now, but not for big appliances like a microwave or kettle.\n\nHere are electricians near Sunnyvale:\n\n1. WCI Electric, 408-242-2069, Santa Clara (4.9 km). Listed hours are Mon\u2013Fri 8am\u20135pm, and you can also reach them by email, so they're easy to contact during business hours.\n2. Flores Electric, 408-899-8450, Santa Clara (4.3 km). This is the closest option.\n3. University Electric, 408 496 0500, Santa Clara (7.3 km). This is a good backup.\n\nI'd pick WCI Electric first, with Flores Electric as a backup. I can send your request to them so they call you back. If you'd like that, please send:\n\n- Your full name and best phone number (and email if you'd like)\n- The service address\n- When someone can come, whether you own or rent, and the type of home (house, condo, etc.)"
+    },
+    {
+      "role": "user",
+      "text": "Okay, I'll take a look with a flashlight but won't touch it. Before I send everything, why do you need to know whether I own or rent? I'm Priya Raman, 408-555-0163, and weekday afternoons this week work best for me."
+    },
+    {
+      "role": "assistant",
+      "text": "Fair question. Electricians ask because it changes who can approve the work and who usually pays. If you rent, your landlord typically has to authorize electrical repairs and often covers the cost, so the electrician may need to coordinate with them. If you own, you can approve it yourself. It's optional, though. You can skip it and the electrician can ask when they call.\n\nThanks, Priya. I've noted your name, your phone number (408-555-0163), and that weekday afternoons this week work best. To send the request, I just need:\n\n1. The service street address (I'll assume Sunnyvale, CA 94087 unless you tell me otherwise)\n2. Whether it's a house, condo, apartment, or townhouse, and whether you own or rent, if you're comfortable sharing\n\nAlso, are you okay with me sharing your name, phone number, and address with WCI Electric, with Flores Electric as a backup, so they can call you back? And if you spot any scorch marks with the flashlight, let me know and I'll add that to the request."
+    },
+    {
+      "role": "user",
+      "text": "That makes sense, thanks. It's 820 E Fremont Ave Unit 12, Sunnyvale 94087. It's a townhouse and I own it, and yes, you can share my info with WCI Electric, and Flores as a backup. My email is priya.r@example.com if that helps."
+    },
+    {
+      "role": "assistant",
+      "text": "Your request is set up. The reference number is LEAD-20261008-B5FF1A.\n\n- It's going to WCI Electric, 408-242-2069 (wcielectric.com), with Flores Electric (408-899-8450) as the backup.\n- I included everything you told me: the outlet sparked with a pop yesterday, the breaker won't stay on, about half the kitchen has no power, there's no burning smell now, and weekday afternoons work for you.\n\nWhat to expect next: WCI should call you at 408-555-0163 to set up a time. Their listed hours are Mon\u2013Fri 8am\u20135pm. If you'd like to move faster, or haven't heard from them by tomorrow afternoon, call them yourself and mention the reference number. If they can't fit you in, call Flores.\n\nUntil then, keep that breaker off and don't reset it again. If you spot scorch marks with the flashlight, tell the electrician when they call. And if you ever smell burning or see smoke, get out and call 911."
+    }
+  ]
+}
