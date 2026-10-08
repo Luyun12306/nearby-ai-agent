@@ -2,7 +2,7 @@
 
 The assignment brief is in `ASSIGNMENT.md`. This file covers what was built and how to run it.
 
-**Time spent:** about 3 hours, built with Claude Code. Most of the time went into testing with real provider data,
+**Time spent:** about 5 hours, built with Claude Code. Most of the time went into testing with real provider data,
 running the evaluation, and verifying providers.
 
 A conversational agent (Claude `claude-opus-5-5` with tool use) that turns a homeowner's description of a problem
