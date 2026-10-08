@@ -28,7 +28,7 @@ I can send your request to Resolute Water Damage so they call you back right awa
 - Whether you plan to file an insurance claim
 
   USER: Yes, please send it to Resolute. I'm Maria Lopez, 512-555-0142, maria.lopez@example.com, at 1402 Bluebonnet Ln, Austin 78704. I own the house (single family) and I'm home all day so they can come anytime. I have State Farm and will probably file a claim.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-A88F3D.json
+[create_lead] saved leads/LEAD-20261008-A88F3D.json
   AGENT: Your request is in, Maria. Lead ID: LEAD-20261008-A88F3D
 
 It's going to Resolute Water Damage. Austin Flood & Leak Restoration and All Nation Restoration are listed as backups. The status shows "ready to dispatch," so it may not have reached them yet. Since water is still coming in, I'd also call them yourself now: Resolute Water Damage, +1 855-213-9584 (open 24/7). Give them your lead ID so you don't have to explain everything twice.
@@ -76,7 +76,7 @@ Want me to send your request to Elite HVACS so they call you back? If so, I'll n
 Before I send it: do you agree to share your name, phone number, and address with Elite HVACS so they can call you back? Just say yes and I'll send it right away.
 
   USER: yes
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-30057D.json
+[create_lead] saved leads/LEAD-20261008-30057D.json
   AGENT: Done, Dave. I've marked your request as an emergency and sent it to Elite HVACS.
 
 - Lead ID: LEAD-20261008-30057D
@@ -125,7 +125,7 @@ Thanks, Priya. I have your name, phone, condo in 98103, and weekday afternoons t
 2. Is it okay for me to share your contact info with Kemly Electric, and with Extreme Handyman Service or Cochran as backups? And do you own or rent, if you're comfortable saying?
 
   USER: That makes sense, thanks. I own it, and the address is 3810 Fremont Ave N Unit 204, Seattle WA 98103. Yes, you can share my info with Kemly and the backups. My email is priya.r@example.com if they want it.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-D59357.json
+[create_lead] saved leads/LEAD-20261008-D59357.json
   AGENT: Your request is in, Priya. Your lead ID is LEAD-20261008-D59357, and it's going to Kemly Electric, Inc.
 
 - What's next: Kemly should call you at 206-555-0163 to set up a weekday afternoon visit this week. If they can't take it, Extreme Handyman Service or Cochran may contact you instead.

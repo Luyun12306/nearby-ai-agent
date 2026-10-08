@@ -33,7 +33,7 @@ While you wait, move valuables and boxes off the floor, and take photos of the w
 And would you rather they call or text you?
 
   USER: Yes, that's fine, share it with all three if needed. A call is better, I'll keep my phone on me.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-5AE690.json
+[create_lead] saved leads/LEAD-20261008-5AE690.json
   AGENT: Your request is in, Maria. Lead ID: LEAD-20261008-5AE690.
 
 - It's ready to go to Clearway Restoration, +1-408-457-0826, marked as an emergency, and asks them to call you back.
@@ -79,7 +79,7 @@ I can send your request to Palo Alto Plumbing Heating & Air so they call you bac
 Do I have your OK to share your contact info with them?
 
   USER: yeah go ahead. dave kowalski, (408) 555-0199, 1455 remington dr sunnyvale 94087. i own it, single family, anytime today or tomorrow works, sooner is better since i've got a toddler here
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-91A68D.json
+[create_lead] saved leads/LEAD-20261008-91A68D.json
   AGENT: Done, Dave. Your request is ready and queued for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-91A68D
@@ -132,7 +132,7 @@ Thanks, Priya. I've noted your name, your phone number (408-555-0163), and that 
 Also, are you okay with me sharing your name, phone number, and address with WCI Electric, with Flores Electric as a backup, so they can call you back? And if you spot any scorch marks with the flashlight, let me know and I'll add that to the request.
 
   USER: That makes sense, thanks. It's 820 E Fremont Ave Unit 12, Sunnyvale 94087. It's a townhouse and I own it, and yes, you can share my info with WCI Electric, and Flores as a backup. My email is priya.r@example.com if that helps.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-B5FF1A.json
+[create_lead] saved leads/LEAD-20261008-B5FF1A.json
   AGENT: Your request is set up. The reference number is LEAD-20261008-B5FF1A.
 
 - It's going to WCI Electric, 408-242-2069 (wcielectric.com), with Flores Electric (408-899-8450) as the backup.
@@ -177,7 +177,7 @@ Two quick things before I send it:
 2. Are you planning to file this with your homeowner's insurance, since it may be wind damage? Yes, no or unsure is fine. If you might, the roofer can document the damage with photos.
 
   USER: Yes, totally fine to share my info with them. On insurance, I'm not sure yet, so photos of the damage would be great in case I decide to file.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-1FB04A.json
+[create_lead] saved leads/LEAD-20261008-1FB04A.json
   AGENT: Your request to Waterproofing Associates is in.
 
 - Lead ID: LEAD-20261008-1FB04A
@@ -225,7 +225,7 @@ Two quick things before I send it:
 2. Would you rather they call or text you at 408-555-0188?
 
   USER: Yes, that's fine to share with both. Text first is better since I'm at work during the day, but calls after 5 are okay too.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-611D76.json
+[create_lead] saved leads/LEAD-20261008-611D76.json
   AGENT: Done, Jordan. Your request has gone to Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-611D76
@@ -285,7 +285,7 @@ You also don't have to agree to anything on the visit. Ask for the itemized quot
 If you'd rather I send the request, I can add a note saying you want the diagnostic fee confirmed before the visit and an itemized written quote before any work. Just tell me if you want that, or if you'd rather call them yourself.
 
   USER: Okay, if you add that note asking for the fee upfront and an itemized written quote before any work, go ahead and send it. I'm Linda Park, 408-555-0110, lpark@example.com, and the house is at 977 Pome Ave, Sunnyvale 94087. I own it, it's a single-family home, and I'd like someone this week, mornings are best.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-019558.json
+[create_lead] saved leads/LEAD-20261008-019558.json
   AGENT: I sent your request to Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-019558

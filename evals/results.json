@@ -18,7 +18,7 @@
       "provider_source_url": "https://www.openstreetmap.org/node/7318153333",
       "turns": 4,
       "seconds": 38.1,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-D4FB68.json",
+      "lead_path": "leads/LEAD-20261008-D4FB68.json",
       "error": null,
       "transcript": [
         {
@@ -69,7 +69,7 @@
       "provider_source_url": "https://www.openstreetmap.org/node/6300323028",
       "turns": 4,
       "seconds": 37.3,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-1D6406.json",
+      "lead_path": "leads/LEAD-20261008-1D6406.json",
       "error": null,
       "transcript": [
         {
@@ -117,7 +117,7 @@
       "provider_source_url": "https://www.openstreetmap.org/node/13030591255",
       "turns": 5,
       "seconds": 38.0,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-5272A1.json",
+      "lead_path": "leads/LEAD-20261008-5272A1.json",
       "error": null,
       "transcript": [
         {
@@ -175,7 +175,7 @@
       "provider_source_url": "https://www.openstreetmap.org/way/228014258",
       "turns": 4,
       "seconds": 29.2,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-BC790B.json",
+      "lead_path": "leads/LEAD-20261008-BC790B.json",
       "error": null,
       "transcript": [
         {
@@ -225,7 +225,7 @@
       "provider_source_url": "https://www.openstreetmap.org/node/6300323028",
       "turns": 4,
       "seconds": 30.8,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-B73BD8.json",
+      "lead_path": "leads/LEAD-20261008-B73BD8.json",
       "error": null,
       "transcript": [
         {
@@ -273,7 +273,7 @@
       "provider_source_url": "https://www.openstreetmap.org/node/6300323028",
       "turns": 4,
       "seconds": 37.1,
-      "lead_path": "/Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-AA3679.json",
+      "lead_path": "leads/LEAD-20261008-AA3679.json",
       "error": null,
       "transcript": [
         {

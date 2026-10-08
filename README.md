@@ -19,20 +19,28 @@ user ──► HomeServiceAgent (Claude, multi-turn, tool use)
 ## Setup
 
 ```bash
-/opt/homebrew/bin/python3.14 -m venv .venv      # any Python >= 3.10
+python3 -m venv .venv                            # any Python >= 3.10
 source .venv/bin/activate
 pip install -r requirements.txt
 export ANTHROPIC_API_KEY=sk-ant-...
 export GOOGLE_PLACES_API_KEY=...                 # optional; better coverage, ratings, open-now
 ```
 
+Instead of exporting, you can put the same `KEY=value` lines in a `.env` file in the project root. It's loaded
+automatically and is git-ignored.
+
+**No Anthropic key?** Run `python -m nearby_agent` anyway. It starts in an offline demo mode: a rule-based conversation
+with no AI, but the same live provider search, lead validation and lead files. OpenStreetMap needs no key. Try
+"Water started coming into my basement last night after the storm." and answer its questions (ZIP 94087 works).
+
 ## Run
 
 ```bash
 python -m nearby_agent -v                 # interactive chat; -v shows tool calls
+python -m nearby_agent --offline          # rule-based demo mode (automatic when no key is set)
 python -m nearby_agent --backend osm      # force OpenStreetMap
-python -m evals.simulate -v               # simulated homeowners -> conversion rate & lead quality
-python -m pytest -q                       # offline tests (no API keys needed)
+python -m evals.simulate -v               # simulated homeowners -> conversion rate & lead quality (needs a key)
+python -m pytest -q                       # unit tests (no API keys or network needed)
 ```
 
 In the chat, `/lead` prints the current lead JSON and `/quit` exits. Leads are written to `leads/<lead_id>.json`

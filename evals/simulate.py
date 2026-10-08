@@ -23,6 +23,7 @@ import anthropic
 from nearby_agent.agent import HomeServiceAgent
 from nearby_agent.env import load_env
 
+ROOT = Path(__file__).resolve().parent.parent
 SIM_MODEL = os.environ.get("SIM_MODEL", "claude-opus-5-5")
 DONE = "<<END>>"
 
@@ -150,7 +151,8 @@ def simulate(scenario: dict, max_turns: int, verbose: bool) -> dict:
         "provider_source_url": lead["recommended_provider"].get("source_url") if lead else None,
         "turns": turns,
         "seconds": round(time.time() - started, 1),
-        "lead_path": str(agent.lead_path) if agent.lead_path else None,
+        # Relative to the project root so results are portable and don't embed local paths.
+        "lead_path": os.path.relpath(agent.lead_path, ROOT) if agent.lead_path else None,
         "error": error,
         "transcript": agent.transcript,
     }

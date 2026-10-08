@@ -33,7 +33,7 @@ I can send your request to Clearway Restoration so they call you back. If you'd 
 Is it OK for me to share your name, phone (408-555-0142), email (maria.lopez@example.com), address (1032 Hollenbeck Ave, Sunnyvale, CA 94087) and the details of the flooding with Clearway Restoration so they can contact you? Please reply yes or no.
 
   USER: Yes, that's fine. Please send it.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-D4FB68.json
+[create_lead] saved leads/LEAD-20261008-D4FB68.json
   AGENT: I've created your request and it's queued for Clearway Restoration. The lead ID is LEAD-20261008-D4FB68.
 
 Water is still coming in, so I'd also call them directly at +1-408-457-0826. They're open 24/7. If they can't come soon, call Reactic Restoration at +1-408-998-4840.
@@ -76,7 +76,7 @@ Before I send it, here's what I'd share with Palo Alto Plumbing Heating & Air:
 Is it okay for me to share this with Palo Alto Plumbing Heating & Air so they can call you back? (yes/no)
 
   USER: yes go ahead
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-1D6406.json
+[create_lead] saved leads/LEAD-20261008-1D6406.json
   AGENT: Done, Dave. Your request is queued for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-1D6406
@@ -137,7 +137,7 @@ Your email: Flores Electric only gets what you give me. Email is optional. If yo
 Do you agree to share this information with Flores Electric so they can contact you about this job? A simple yes is fine. Also, would you prefer they call, text, or email?
 
   USER: Yes, that all looks right, go ahead and send it. One small detail: it's the outlet right next to the toaster. A call is best, or a text if they can't reach me.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-5272A1.json
+[create_lead] saved leads/LEAD-20261008-5272A1.json
   AGENT: Priya, your request is queued for Flores Electric.
 
 - Lead ID: LEAD-20261008-5272A1
@@ -183,7 +183,7 @@ Before I send anything, two quick things:
 2. Are you planning to file an insurance claim? Yes, no or unsure is fine.
 
   USER: Yes, go ahead and share my info with both of them. Insurance is a good idea I hadn't thought of, so I'd say unsure for now, but I'll give my insurer a call.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-BC790B.json
+[create_lead] saved leads/LEAD-20261008-BC790B.json
   AGENT: You're all set, Tom. Your request is queued for Waterproofing Associates, with Falcon Roofing as the backup.
 
 - Lead ID: LEAD-20261008-BC790B
@@ -237,7 +237,7 @@ Do you agree to share your name (Jordan Ellis), your phone or email, your addres
 The job details will cover the clog in both sides of the sink, the Drano in the standing water, the humming disposal and your weekday availability after 5pm. I'll also note that you rent and your landlord is reimbursing you, so they can send a receipt you can pass along.
 
   USER: Ok that makes sense, as long as it's just them. Yes, go ahead. My number is 408-555-0188.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-B73BD8.json
+[create_lead] saved leads/LEAD-20261008-B73BD8.json
   AGENT: I've created the request, Jordan, and it's queued for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-B73BD8
@@ -295,7 +295,7 @@ Want me to send your request to Palo Alto Plumbing Heating & Air so they call yo
 Before I queue it, please confirm: can I share your name, phone (408-555-0110), email (lpark@example.com), address (977 Pome Ave, Sunnyvale CA 94087) and the water heater details with Palo Alto Plumbing Heating & Air so they can contact you? Also, would you prefer they reach you by phone, text or email?
 
   USER: Yes, you can share all of that with them. Phone is best, and a text is fine too if I miss the call.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-AA3679.json
+[create_lead] saved leads/LEAD-20261008-AA3679.json
   AGENT: Your request is in. Lead ID: LEAD-20261008-AA3679
 
 It's queued for Palo Alto Plumbing Heating & Air (+1-650-856-3400). I included your note asking for the trip fee and a written quote before any work, and that mornings this week work best. I also noted they should call you first and text if they miss you.

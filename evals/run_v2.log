@@ -31,7 +31,7 @@ Also, are you planning to file this with your insurance? Restoration companies o
 Can I share your name, phone, email, address and the details of the flooding with Clearway Restoration so they can call you back about coming out today? (Yes/No)
 
   USER: Yes, go ahead and send it. Please let them know it's still seeping a little.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-2C6ED6.json
+[create_lead] saved leads/LEAD-20261008-2C6ED6.json
   AGENT: Your request is in. Your lead ID is LEAD-20261008-2C6ED6.
 
 It's queued for Clearway Restoration (408-457-0826). I included that water is still seeping in along the back wall, that there's about 2 inches across the floor, that you're home all day and want someone today, and that you'll probably file a claim with State Farm.
@@ -70,7 +70,7 @@ I can send your request to Palo Alto Plumbing Heating & Air so they call you bac
 Before I send it: is it OK for me to share your name, phone number (408) 555-0199, your address at 1455 Remington Dr, Sunnyvale 94087, and the furnace details with Palo Alto Plumbing Heating & Air so they can call you back? Yes or no?
 
   USER: yes go ahead
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-E256D5.json
+[create_lead] saved leads/LEAD-20261008-E256D5.json
   AGENT: I've created your request and queued it for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-E256D5
@@ -137,7 +137,7 @@ I'd also list WCI Electric as a backup in case Flores can't take it.
 Is it OK for me to share your name, phone number, address, and these job details with Flores Electric so they can contact you? Just reply yes or no.
 
   USER: Yes, go ahead. One small detail you could add: it's the outlet right next to the toaster, and it sparked with a pop yesterday evening.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-DE4974.json
+[create_lead] saved leads/LEAD-20261008-DE4974.json
   AGENT: You're all set, Priya. I added that it's the outlet next to the toaster and that it sparked with a pop yesterday evening.
 
 - Lead ID: LEAD-20261008-DE4974
@@ -179,7 +179,7 @@ To set that up, I'll need:
 Do you agree to let me share your name, phone number (408-555-0127, text preferred), address (1268 Inverness Way, Sunnyvale 94087), and the job details with Waterproofing Associates so they can contact you? Yes or no?
 
   USER: Yes, go ahead and share it with them. Thanks for making this so easy!
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-6F68A2.json
+[create_lead] saved leads/LEAD-20261008-6F68A2.json
   AGENT: Your request is set up, Tom. The lead ID is LEAD-20261008-6F68A2, and it's queued for Waterproofing Associates (+1-650-937-1299). It asks them to text you about a weekday morning visit, and it mentions you're interested in a temporary tarp.
 
 I can't see when they'll get it. If rain is in the forecast, you could also call them yourself (Mon-Fri 7am-4pm) and give them the lead ID. Until then, keep taking photos of the stain and the shingles in case you decide to file a claim.
@@ -219,7 +219,7 @@ I still need your phone number. You didn't include it. Do you prefer a call or a
 Once I have it, here's the consent question: Do you agree to let me share your name, phone number, address (1111 Bernardo Ave Apt 7, Sunnyvale, CA 94087) and the job details with Palo Alto Plumbing Heating & Air so they can contact you? The job details are both basins clogged since last night, plunger and Drano tried, disposal hums but won't spin, you're renting with your landlord's OK, and you're available weekdays after 5pm. Just answer yes or no along with your number.
 
   USER: Yes, that's fine. It's 408-555-0188, and a call is better than a text.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-2CBC95.json
+[create_lead] saved leads/LEAD-20261008-2CBC95.json
   AGENT: You're all set, Jordan. Your request is created and queued for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-2CBC95
@@ -276,7 +276,7 @@ The request will cover your 12-year-old gas water heater with lukewarm water sin
 Also, would you rather they call, text or email you?
 
   USER: Yes, you can share all that with them. A call is best, but text is fine too if they can't reach me.
-[create_lead] saved /Users/luyun/Newsbreak_Ai_Agent/leads/LEAD-20261008-A2BB3A.json
+[create_lead] saved leads/LEAD-20261008-A2BB3A.json
   AGENT: Your request has been created and is queued for Palo Alto Plumbing Heating & Air.
 
 - Lead ID: LEAD-20261008-A2BB3A
